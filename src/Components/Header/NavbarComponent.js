@@ -1,15 +1,17 @@
+import React from "react";
 import { Link } from "react-router-dom";
+import styles from "../styles/Navbar.module.css";
 
-const NavbarComponent = () => {
+const Navbar = () => {
   return (
-    <nav>
-      <h2>Newsletter App</h2>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/dashboard">Dashboard</Link></li>
+    <nav className={styles.nav}>
+      <h2 className={styles.logo}>📩 Newsletter App</h2>
+      <ul className={styles.navLinks}>
+        <li><Link to="/" className={styles.link}>Home</Link></li>
+        <li><Link to="/dashboard" className={styles.link}>Dashboard</Link></li>
       </ul>
     </nav>
   );
 };
 
-export default NavbarComponent;
+export default Navbar;
