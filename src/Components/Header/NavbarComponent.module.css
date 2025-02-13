@@ -2,26 +2,39 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #333;
-  padding: 1rem;
+  background: #222;
+  padding: 1rem 2rem;
   color: white;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
   margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .navLinks {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .link {
   color: white;
   text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 5px;
 }
 
 .link:hover {
-  text-decoration: underline;
+  background: rgba(255, 255, 255, 0.2);
+  color: #f8f9fa;
 }
+
+
