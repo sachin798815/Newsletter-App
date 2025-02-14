@@ -39,4 +39,15 @@
   color: #f8f9fa;
 }
 
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
 
+  .navLinks {
+    margin-top: 10px;
+    gap: 1rem;
+  }
+}
