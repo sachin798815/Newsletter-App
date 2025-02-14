@@ -1,22 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
+import SubscriptionForm from "../components/SubscriptionForm";
+import styles from "../styles/Home.module.css";
 
 const Home = () => {
-  const [email, setEmail] = useState("");
-
-  const handleSubscribe = () => {
-    alert(`Subscribed with ${email}`);
-  };
-
   return (
-    <div>
-      <h1>Subscribe to Our Newsletter</h1>
-      <input
-        type="email"
-        placeholder="Enter your email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <button onClick={handleSubscribe}>Subscribe</button>
+    <div className={styles.container}>
+      <h1>Welcome to Our Newsletter</h1>
+      <p>Stay updated with the latest news. Subscribe now!</p>
+      <SubscriptionForm />
     </div>
   );
 };
