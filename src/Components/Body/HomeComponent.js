@@ -1,8 +1,7 @@
-import React from "react";
-import SubscriptionForm from "../components/SubscriptionForm";
-import styles from "../styles/Home.module.css";
+import SubscriptionForm from "./Components/SubscriptionForm";
+import styles from "./HomeComponeny.module.css";
 
-const Home = () => {
+const HomeComponent = () => {
   return (
     <div className={styles.container}>
       <h1>Welcome to Our Newsletter</h1>
@@ -12,4 +11,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeComponent;
