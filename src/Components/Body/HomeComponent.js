@@ -1,14 +1,14 @@
-import SubscriptionForm from "./Components/SubscriptionForm";
-import styles from "./HomeComponeny.module.css";
+import styles from "./HomeComponent.module.css";
 
-const HomeComponent = () => {
+const Home = () => {
   return (
     <div className={styles.container}>
-      <h1>Welcome to Our Newsletter</h1>
-      <p>Stay updated with the latest news. Subscribe now!</p>
-      <SubscriptionForm />
+      <div className={styles.hero}>
+        <h1>Stay Updated with Our Newsletter</h1>
+        <p>Subscribe to receive the latest updates, articles, and exclusive content straight to your inbox.</p>
+      </div>
     </div>
   );
 };
 
-export default HomeComponent;
+export default Home;
