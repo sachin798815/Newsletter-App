@@ -1,3 +1,5 @@
+import styles from "./DashboardComponent.module.css";
+
 const Dashboard = () => {
   const [subscribers, setSubscribers] = useState(["user1@example.com", "user2@example.com"]);
 
