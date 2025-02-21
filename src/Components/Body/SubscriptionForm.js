@@ -2,6 +2,12 @@ const SubscriptionForm = () => {
   const [email, setEmail] = useState("");
 
   const handleSubscribe = () => {
+    if (!email.includes("@")) {
+      alert("Please enter a valid email.");
+      return;
+    }
+    alert(`Subscribed successfully with: ${email}`);
+    setEmail("");
   };
 
   return (
