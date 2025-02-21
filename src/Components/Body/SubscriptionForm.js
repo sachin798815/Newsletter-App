@@ -1,0 +1,21 @@
+const SubscriptionForm = () => {
+  const [email, setEmail] = useState("");
+
+  const handleSubscribe = () => {
+  };
+
+  return (
+    <div className={styles.formContainer}>
+      <input
+        type="email"
+        placeholder="Enter your email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        className={styles.input}
+      />
+      <button onClick={handleSubscribe} className={styles.button}>Subscribe</button>
+    </div>
+  );
+};
+
+export default SubscriptionForm;
