@@ -1,3 +1,6 @@
+import { useState } from "react";
+import styles from "./SubscriptionForm.module.css";
+
 const SubscriptionForm = () => {
   const [email, setEmail] = useState("");
 
